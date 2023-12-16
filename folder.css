@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Indie+Flower&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: ;
     box-sizing: border-box;
@@ -8,135 +8,146 @@
     scroll-behavior: smooth;
     font-family: 'Exo 2', sans-serif;
 }
+
 #toggler,
-.header label{
+.header label {
     display: none;
     color: white;
 }
 
-header{
-
-
-  
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     background-color: #030A74;
     padding: 15px;
-    font-weight:300 ;
-    border-radius: 0 100px;
+    font-weight: 300;
+    border-radius: 20px;
     box-shadow: 0 0 1rem black;
+
 
 }
 
-.logo{
-    font-size: 50px;
+
+
+
+.logo {
+    font-size: 45px;
     font-family: 'Exo 2', sans-serif;
-    color:white;
+    color: white;
     transition: 0.9s ease-in-out;
     letter-spacing: 10px;
     padding: 30px;
-   
-
- 
-
 }
 
 
 
 
 
-.nav a{
+
+.nav a {
     text-decoration: none;
     color: white;
     font-family: 'Exo 2', sans-serif;
-    margin-right: 40px;
+    margin-right: 50px;
+    letter-spacing: 3px;
+    transition: .3s ease-in;
+}
+
+.nav a:hover{
+    font-weight: bold;
 }
 
 
 
-section{
+
+
+section {
     position: relative;
     min-height: 100vh;
     padding: 1rem 9% 2rem;
 }
 
-.anasayfa{
+.anasayfa {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .anasayfa-img img,
-.two-img img{
+.two-img img {
     width: 35vw;
     height: 500px;
     border-radius: 0 100px;
-    box-shadow:0 0 1rem #4a4d82 ;
-    transition: .9s ease;
+    box-shadow: 0 0 rem black;
+
 
 }
 
 
 
-.anasayfa-content{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.anasayfa-content {
     padding: 50px;
-    line-height: 1.7;
+    line-height: 1.8;
 
 }
 
-.anasayfa-content h2{
+.anasayfa-content h2 {
     margin-bottom: 30px;
     font-size: 33px;
     font-weight: 900;
+    font-family: 'Exo 2', sans-serif;
 }
 
-.anasayfa-content p{
+.anasayfa-content p {
     font-size: 17px;
-    
+    font-family: 'Exo 2', sans-serif;
+
 }
 
-.two{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 30px;
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-.two-content{
+.two-content {
     order: 2;
+    line-height: 1.8;
 }
 
-.two-content h3{
+.two-content h3 {
     font-size: 30px;
     margin-bottom: 20px;
+    font-family: 'Exo 2', sans-serif;
 }
 
-.two-content p{
+.two-content p {
     font-size: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     line-height: 1.7;
 }
 
-.balik-türleri .row{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5px;
+.balik-türleri .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
 
-    
+
 }
 
-.balik-türleri .col img{
+.balik-türleri .col img {
     width: 100%;
     height: auto;
-    border-radius:10px ;
+    border-radius: 10px;
     box-shadow: 0 0 1rem;
 }
 
 
 
-.top{
+.top {
     position: fixed;
     right: 20px;
     bottom: 0;
@@ -144,31 +155,31 @@ gap: 30px;
     color: #030A74;
 }
 
-.adres{
+.adres {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
 
-.adres .adres-img img{
+.adres .adres-img img {
     width: 35vw;
     height: 500px;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 0 100px;
-    box-shadow:0 0 5px 3px black;
+    box-shadow: 0 0 5px 3px black;
 }
 
-.adres-content{
+.adres-content {
     padding: 5px 10px;
     line-height: 1.5;
 }
 
-.adres-content h2{
+.adres-content h2 {
     font-size: 35px;
 }
 
-.adres-content p{
+.adres-content p {
     font-size: 20px;
 }
 
@@ -176,49 +187,50 @@ gap: 30px;
 
 
 
-@media screen and (max-width:500px){
-  
-    .navbar{
-        width:100% ;
+@media screen and (max-width:500px) {
+
+    .navbar {
+        width: 100%;
         max-height: 0;
         overflow: hidden;
     }
-    .logo{
-        margin-left: 0;
+
+    .logo {
+        margin: auto;
         font-size: 35px;
         padding: 40px;
     }
 
-    .nav{
+    .nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-      
-   
-    }   
 
-    .nav a{
+
+
+    }
+
+    .nav a {
         display: flex;
         margin: 20px;
         font-size: 14px;
 
     }
 
-    .header label{
+    .header label {
         display: inline-flex;
         align-items: center;
+        /* color: black; */
     }
 
-    #toggler:checked ~ .navbar{
-        
+    #toggler:checked~.navbar {
         max-height: 100%;
     }
-  
- 
 
- 
-    .anasayfa{
+
+
+
+    .anasayfa {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -226,62 +238,77 @@ gap: 30px;
         margin: 0;
         padding: 0;
     }
-     .anasayfa-img img{
+
+    .anasayfa-img img {
         width: 100%;
         height: auto;
-     }
-    .anasayfa-img{
+    }
+
+    .anasayfa-img {
         width: 400px;
         height: auto;
-     
+
     }
-    
-    .anasayfa-content h2{
+
+    .anasayfa-content h2 {
         font-size: 18px;
         text-align: center;
     }
-    .anasayfa-content p{
+
+    .anasayfa-content p {
         font-size: 14px;
-   
-     
+
+
     }
-    .two-content{
+
+    .two-content {
         order: 0;
     }
 
-    .two{
+    .two {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+        gap: 130px;
+
     }
-    .two-img img{
+
+    .two-img img {
         width: 100%;
         height: auto;
     }
-    .two-img{
+
+    .two-img {
         width: 400px;
         height: auto;
     }
-    .two-content{
+
+    .two-content {
         text-align: center;
     }
-    .two-content h3{
+
+    .two-content h3 {
         font-size: 18px;
         text-align: center;
     }
 
-    .two-content p{
-       font-size: 14px;
+    .two-content p {
+        font-size: 14px;
     }
-  .balik-türleri{
-    
-  }
-    .balik-türleri .row{
+
+    .balik-türleri {}
+
+    .balik-türleri .row {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
 
+}
+
+@media screen and (max-width:381px) {
+    .header .logo {
+        font-size: 30px;
+    }
 }
