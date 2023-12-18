@@ -2,12 +2,21 @@
 
 * {
     margin: 0;
-    padding: ;
+    padding: 0;
     box-sizing: border-box;
-    cursor: pointer;
+    cursor: crosshair;
     scroll-behavior: smooth;
     font-family: 'Exo 2', sans-serif;
 }
+body{
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #e4e4ea);
+}
+html{
+    scroll-behavior: smooth;
+   
+}
+
+
 
 #toggler,
 .header label {
@@ -20,11 +29,12 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #030A74;
+    background: linear-gradient(0.25turn, #101011, #5570c9, #0843a2);
     padding: 15px;
     font-weight: 300;
-    border-radius: 20px;
+    border-radius: 0 100px;
     box-shadow: 0 0 1rem black;
+ 
 
 
 }
@@ -53,10 +63,15 @@ header {
     margin-right: 50px;
     letter-spacing: 3px;
     transition: .3s ease-in;
+    padding: 8px 15px;
+    
+  
 }
 
 .nav a:hover{
     font-weight: bold;
+
+    
 }
 
 
@@ -73,6 +88,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .anasayfa-img img,
@@ -101,7 +117,7 @@ section {
 }
 
 .anasayfa-content p {
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Exo 2', sans-serif;
 
 }
@@ -111,6 +127,8 @@ section {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
+ 
 }
 
 .two-content {
@@ -125,26 +143,10 @@ section {
 }
 
 .two-content p {
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Exo 2', sans-serif;
     line-height: 1.7;
 }
-
-.balik-türleri .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-
-
-}
-
-.balik-türleri .col img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 1rem;
-}
-
 
 
 .top {
@@ -155,35 +157,69 @@ section {
     color: #030A74;
 }
 
-.adres {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.tree{
+    /* background: linear-gradient(#eae3e3, #030A74);
+    border-radius:0 300px;
+    */
+
+    
+}
+.tree .tree-content {
+    width: 1200px;
+    height: auto;
+    box-shadow: 0 0 1rem black;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+    
+}
+.tree .tree-content h2{
+text-transform: capitalize;
+font-size: 30px;
+font-family: 'Exo 2', sans-serif;
+line-height: 1.7;
 }
 
-.adres .adres-img img {
-    width: 35vw;
-    height: 500px;
-    border: 1px solid;
-    border-radius: 0 100px;
-    box-shadow: 0 0 5px 3px black;
+.tree .tree-content p{
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 2;
+
 }
 
-.adres-content {
-    padding: 5px 10px;
-    line-height: 1.5;
-}
-
-.adres-content h2 {
-    font-size: 35px;
-}
-
-.adres-content p {
-    font-size: 20px;
+.sos{
+    font-size: 19px;
+    font-weight: bold;
 }
 
 
+
+.four .four-content {
+    width: 1200px;
+    height: auto;
+    box-shadow: 0 0 1rem black;
+    padding: 10px;
+    border-radius: 10px;
+    overflow:  hidden;
+    
+    
+}
+
+.four .four-content h3{
+text-transform: capitalize;
+font-size: 30px;
+font-family: 'Exo 2', sans-serif;
+line-height: 1.7;
+}
+
+.four .four-content p{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 2;
+    }
+    
 
 
 
@@ -213,14 +249,16 @@ section {
     .nav a {
         display: flex;
         margin: 20px;
-        font-size: 14px;
+        font-size: 16px;
+        padding: 0;
+        line-height: 0.8;
 
     }
 
     .header label {
         display: inline-flex;
         align-items: center;
-        /* color: black; */
+      
     }
 
     #toggler:checked~.navbar {
@@ -297,12 +335,39 @@ section {
         font-size: 14px;
     }
 
-    .balik-türleri {}
-
-    .balik-türleri .row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .tree .tree-content{
+        width: 100%;
+        height: auto;
     }
+
+    .tree .tree-content h2{
+        font-size: 18px;
+    }
+
+    .tree .tree-content p{
+        font-size: 14px;
+    }
+
+    .sos{
+        font-size: 15px;
+    }
+
+    .four .four-content{
+        width: 100%;
+        height: auto;
+    }
+
+    .four .four-content h3{
+        font-size: 18px;
+    }
+
+    .four .four-content p{
+        font-size: 14px;
+    }
+    
+
+
+
 
 
 }
