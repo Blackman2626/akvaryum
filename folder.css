@@ -404,6 +404,18 @@ section {
   .four .four-content p {
     font-size: 14px;
   }
+  .five .five-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .five .five-content h2 {
+    font-size: 18px;
+  }
+
+  .five .five-content p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 381px) {
