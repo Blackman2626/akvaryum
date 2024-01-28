@@ -370,11 +370,13 @@ box-shadow: 0 0 1rem black;
     height: auto;
     margin-bottom: 15px;
     padding: 0 20px;
+   
   }
 
   .anasayfa-content h2 {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+   margin-top: 25px;
   }
 
   .anasayfa-content p {
@@ -410,6 +412,7 @@ box-shadow: 0 0 1rem black;
   .two-content h3 {
     font-size: 18px;
     text-align: center;
+    margin-top: 20px;
   }
 
   .two-content p {
@@ -432,6 +435,7 @@ box-shadow: 0 0 1rem black;
 
   .tree .tree-content h2 {
     font-size: 18px;
+    margin-top: 10px;
   }
 
   .tree .tree-content p {
