@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Indie+Flower&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+  scroll-behavior: smooth;
+  font-family: "Exo 2", sans-serif;
+  user-select: none;
+}
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #e4e4ea);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+#toggler,
+.header label {
+  display: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(0.25turn, #101011, #5570c9, #0843a2);
+  padding: 15px;
+  font-weight: 300;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem black;
+
+
+}
+
+.logo {
+  font-size: 45px;
+  font-family: "Exo 2", sans-serif;
+  color: white;
+  transition: 0.9s ease-in-out;
+  letter-spacing: 10px;
+  padding: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  margin-right: 50px;
+  letter-spacing: 3px;
+  padding: 8px 15px;
+  line-height: 1.5;
+  display: inline-block;
+}
+.nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color:white;
+    transition: width .3s ease-in-out;
+}
+
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+
+
+.nav a:hover {
+  font-weight: bold;
+
+    
+
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  padding: 1rem 9% 2rem;
+}
+
+.anasayfa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anasayfa-img img,
+.two-img img {
+  width: 35vw;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem black;
+  object-fit: cover;
+}
+
+.anasayfa-content {
+  padding: 50px;
+  line-height: 1.8;
+}
+
+.anasayfa-content h2 {
+  margin-bottom: 30px;
+  font-size: 33px;
+  font-weight: 900;
+  font-family: "Exo 2", sans-serif;
+}
+
+.anasayfa-content p {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.two-content {
+  order: 2;
+  line-height: 1.8;
+}
+
+.two-content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.two-content p {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.7;
+}
+
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  font-size: 50px;
+  color: #030b74da;
+
+}
+
+.tree {
+  width: 100%;
+  height: auto;
+}
+.tree .tree-content {
+  width: 1200px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.tree .tree-content h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.tree .tree-content p {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 2;
+}
+
+.sos {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.sop{
+  text-decoration: overline;
+  font-weight: bold;
+
+
+}
+
+.four .four-content {
+  width: 1200px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.four .four-content h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.four .four-content p {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 2;
+}
+
+.resim {
+  width: 100%;
+  height: 300px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/21/17/09/animals-1846546_1280.jpg);
+  background-position: left;
+  background-size: cover;
+  border-radius: 10px;
+
+}
+
+.resim-two {
+  width: 100%;
+  height: 300px;
+  background-image: url(https://cdn.pixabay.com/photo/2022/01/20/20/55/goldfish-6953313_1280.jpg);
+  background-position:center;
+  background-size: cover;
+  border-radius: 10px;
+
+}
+
+.five .five-content {
+  width: 1200px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.five .five-content h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.five .five-content p {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  line-height: 2;
+}
+
+.contain{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+
+.cerceve{
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+}
+.cerceve img{
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 0 1rem black;
+}
+
+
+
+.cerceve:hover{
+  transform: scale(1.1) ;
+ 
+}
+
+#galary h2{
+  margin-left:20px ;
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    width: 1500px;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .logo {
+    margin: auto;
+    font-size: 35px;
+    padding: 40px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    display: flex;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: inline-block;
+  }
+  .nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color:white;
+    transition: width .3s ease-in-out;
+}
+
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+
+
+
+  .header label {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #toggler:checked ~ .navbar {
+    max-height: 100%;
+  }
+
+  .anasayfa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .anasayfa-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anasayfa-img {
+    width: 400px;
+    height: auto;
+  }
+  .anasayfa-content {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+
+  .anasayfa-content h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .anasayfa-content p {
+    font-size: 14px;
+  }
+
+  .two-content {
+    order: 0;
+  }
+
+  .two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+  }
+
+  .two-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .two-img {
+    width: 400px;
+    height: auto;
+  }
+
+  .two-content {
+    text-align: center;
+  }
+
+  .two-content h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .two-content p {
+    font-size: 14px;
+  }
+
+  section {
+    margin: 0;
+    padding: 0 10px;
+  }
+  .tree {
+    width: 100%;
+    height: auto;
+  }
+
+  .tree .tree-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .tree .tree-content h2 {
+    font-size: 18px;
+  }
+
+  .tree .tree-content p {
+    font-size: 14px;
+  }
+
+  .sos {
+    font-size: 15px;
+  }
+
+  .four .four-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .four .four-content h3 {
+    font-size: 18px;
+  }
+
+  .four .four-content p {
+    font-size: 14px;
+  }
+  .five .five-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .five .five-content h2 {
+    font-size: 18px;
+  }
+
+  .five .five-content p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .header .logo {
+    font-size: 30px;
+  }
+}
